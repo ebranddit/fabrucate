@@ -8,6 +8,8 @@ var url = require('url');
 module.exports = function (app) {
 
   // API
+  app.use('/api/site', require('./api/site'));
+  app.use('/api/page', require('./api/page'));
 
   app.route('/:url(api|app|bower_components|assets)/*')
     .get(function (req, res) {

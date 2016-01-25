@@ -9,12 +9,22 @@ var all = {
   root: path.normalize(__dirname + '/../../..'),
   port: process.env.PORT || 9000,
 
+  // Should we populate the DB with sample data?
+  seedDB: false,
+
   mongo: {
     options: {
       db: {
         safe: true
       }
     }
+  },
+
+  // List of user roles
+  userRoles: ['guest', 'user', 'admin'],
+
+  secrets: {
+    session: process.env.SESSION_SECRET || 'secretKey'
   }
 };
 
