@@ -1,0 +1,22 @@
+<!--|Nav|-->
+<div ng-include="'app/navbar/navbar.html'"></div>
+<!--|End Nav|-->
+
+<!--|Header|-->
+<header id="header" class="overlay-default header">
+  <div class="overlay-inner">
+    <!--|Header Content|-->
+    <div class="header-content">
+      <div class="container">
+        <div class="tile col-md-3 col-sm-4 col-xs-6" ng-repeat="tile in tiles">
+            <div class="square"></div>
+            <a href={{tile.link}}>
+              <i class="fa fa-{{tile.icon}}"/>
+              <span>{{tile.title}}</span>
+            </a>
+        </div>
+      </div>
+    </div> <!--||End Header Content|-->
+  </div>
+</header>
+<!--|End Header|-->

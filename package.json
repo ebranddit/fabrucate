@@ -1,0 +1,25 @@
+{
+  "name": "fab",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-open": "^1.0.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-watch": "^4.3.5",
+    "ripe": "^0.2.1",
+    "wiredep": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "compression": "^1.6.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "mongoose": "^4.3.7",
+    "morgan": "^1.6.1"
+  },
+  "scripts": {
+    "start": "node server/server.js"
+  }
+}

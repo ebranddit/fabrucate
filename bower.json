@@ -1,0 +1,25 @@
+{
+  "name": "fab",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "font-awesome": ">=4.1.0",
+    "angular": "~1.4.9",
+    "angular-resource": "~1.4.9",
+    "angular-ui-router": "~0.2.15",
+    "bourbon": "~4.2.6",
+    "include-media": "~1.4.1",
+    "Ionicons": "ionicons#~2.0.1"
+  },
+
+  "overrides":{
+   "bootstrap" : {
+        "main": [
+           "less/bootstrap.less",
+           "dist/css/bootstrap.css",
+           "dist/js/bootstrap.js"
+         ]
+   }
+ }
+}

@@ -1,0 +1,12 @@
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import '../bower_components/font-awesome/scss/font-awesome';
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/include-media/dist/include-media';
+
+
+@import 'core/partials/_colors.scss';
+@import 'core/partials/_layout.scss';
+@import 'create/create.scss';
+@import 'main/main.scss';
+@import 'navbar/nav.scss';

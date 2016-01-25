@@ -1,0 +1,35 @@
+<nav class="navbar navbar-fixed-top" ng-class="{'xf-show': !menuCollapsed}" ng-controller="NavbarCtrl">
+  <div class="container">
+    <!--|Site Brand|-->
+    <div class="site-brand pull-left">
+      <a class="site-logo" href="/"><i class="fa fa-gg-circle"/></a>
+    </div> <!--||End Site Brand|-->
+
+    <div class="pull-right">
+      <!--|Social Links|-->
+      <!-- <div class="social-links">
+        <a href="#"><i class="ion-social-facebook-outline"></i></a>
+        <a href="#"><i class="ion-social-twitter-outline"></i></a>
+        <a href="#"><i class="ion-social-pinterest-outline"></i></a>
+        <a href="#"><i class="ion-social-linkedin-outline"></i></a>
+      </div>  -->
+      <!--||End Social Links|-->
+      <!--|Menu Trigger Btn|-->
+      <a class="menu-trigger-btn" href="#" ng-click="toggleMenu()">
+        <i class="icon-nav ion-navicon"></i>
+        <i class="icon-close ion-ios-close-empty"></i>
+      </a> <!--||End Menu Trigger Btn|-->
+    </div>
+  </div>
+
+  <!--|Menu Wrapper|-->
+  <div class="menu-wrapper">
+    <div class="container">
+      <ul class="nav">
+        <li  ng-repeat="menuItem in menuItems" ng-class="{active: isActive(menuItem.link)}">
+          <a href={{menuItem.link}}>{{menuItem.title}}</a>
+        </li>
+      </ul>
+    </div>
+  </div> <!--|End Menu Wrapper|-->
+</nav>

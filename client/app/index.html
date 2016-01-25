@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="fab">
+  <head>
+
+    <base href="/">
+
+    <title>fab</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="icon" href="app/assets/favicon.ico" type="image/x-icon">
+
+    <!-- build:css app.css -->
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="app/styles/css/app.css">
+
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-image: url(app/assets/images/background.jpg); background-size: cover; background-position: 0% 50%; background-repeat: no-repeat;">
+    </div>
+
+    <div class= "page" ui-view=""></div>
+
+    <!-- build:js app.js -->
+
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/navbar/navbar.controller.js"></script>
+    <script src="/app/main/main.controller.js"></script>
+    <script src="/app/main/main.js"></script>
+    <script src="/app/create/create.controller.js"></script>
+    <script src="/app/create/create.js"></script>
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+  </body>
+</html>
