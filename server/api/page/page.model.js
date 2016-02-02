@@ -3,6 +3,16 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
+var SectionSchema = new Schema({
+  title: String,
+  type: String,
+  layout: {
+    height: Number, //row span
+    width: Number //column span
+  },
+  content: String,
+});
+
 var PageSchema = new Schema({
   site: {
     type: String,
@@ -10,6 +20,10 @@ var PageSchema = new Schema({
   },
   title: {
     type: String,
+    required: true
+  },
+  index: {
+    type: Number,
     required: true
   },
   url: {
@@ -20,7 +34,8 @@ var PageSchema = new Schema({
   phase: {
     type: String,
     default: 'unpublished'
-  }
+  },
+  sections: [SectionSchema]
 });
 
 module.exports = mongoose.model('Page', PageSchema);

@@ -24,19 +24,45 @@ Page.find({}).remove(function() {
   Page.create({
     site : 'demo',
     url : 'home',
-    title : 'Home'
+    index: 1,
+    title : 'Home',
+    sections: [{
+      type: 'slideshow',
+      layout: {
+        width: 12,
+        height: 12
+      }
+    },{
+      type: 'article',
+      layout: {
+        width: 6,
+        height: 12
+      }
+    },{
+      type: 'video',
+      layout: {
+        width: 6,
+        height: 12
+      }
+    }
+    ]
   }, {
     site : 'demo',
     url : 'teachers',
+    index: 2,
     title : 'Teachers'
   }, {
     site : 'demo',
     url : 'about',
+    index: 3,
     title : 'About Us'
   },{
     site : 'ran',
+    url : 'home',
+    index: 0,
     title : 'Home'
-  }, function(){
+  }, function(err){
+    console.log(err);
     console.log('finished populating pages');
   }
 
